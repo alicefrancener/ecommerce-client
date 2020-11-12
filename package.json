@@ -8,6 +8,14 @@
     "start": "next start",
     "lint": "eslint pages --max-warnings=0"
   },
+  "husky" :  {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": ["yarn lint --fix"]
+  },
   "dependencies": {
     "next": "10.0.1",
     "react": "17.0.1",

@@ -1,0 +1,3 @@
+{
+  "presetes": ["next/babel", "@babel/preset-typescript"]
+}
